@@ -16,7 +16,10 @@ import com.vcube.empportal.model.Employee;
 import com.vcube.empportal.repo.EmployeeRepo;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+	    "http://localhost:5173",
+	    "https://employee-portal-frontend-i8k6s2z12-jagannath-portal.vercel.app"
+	})
 public class HelloController {
 	@Autowired
 	EmployeeRepo employeeRepo;
